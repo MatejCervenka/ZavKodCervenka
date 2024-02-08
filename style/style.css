@@ -112,8 +112,14 @@ Contacts page
     text-align: center;
     margin-bottom: 10px;
 }
+
 @media screen and (max-width: 600px) {
     .main-contacts {
         flex-direction: column;
+    }
+
+    .email {
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
