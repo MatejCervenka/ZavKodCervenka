@@ -17,7 +17,12 @@ Home page
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 5px;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-h1 {
@@ -34,16 +39,17 @@ nav a {
     text-decoration: none;
     color: #fff;
     margin: 0 15px;
+    font-size: 1.2em;
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+    height: 80px;
+    padding-top: 0.7em;
 }
 
 .main {
     color: #333;
-    padding: 1em;
+    padding: 0.5em;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -84,35 +90,16 @@ Footer
     color: white;
 }
 
-.buttons-socials {
-    background: #333333;
-    border-color: transparent;
-}
 
-.social-media {
-    background-color: #333333;
-    border-radius: 5px;
-}
-
-#instagram {
-    height: 50px;
-}
-
-#facebook {
-    height: 50px;
-}
 
 
 /*
 About page
 */
 .title {
-    background-color: white;
-    border-radius: 5px;
-    border: 5px solid #333;
+    background-color: #8f8f8f;
+    border-bottom: 5px solid #333;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .h1 {
@@ -129,8 +116,8 @@ Contacts page
 .main-contacts {
     color: white;
     padding: 1em;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto auto;
     text-align: center;
 }
 
@@ -139,10 +126,128 @@ Contacts page
     border-radius: 5px;
 }
 
+.phone-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid white;
+    gap: 0.5em;
+}
+
+.phone-title {
+    font-size: 25px;
+}
+
+.phone-img {
+    height: 35px;
+    width: 35px;
+}
+
+.phone-content a{
+    color: white;
+}
+
 .email {
     background-color: #333333;
     border-radius: 5px;
     margin: 0 10px;
+}
+
+.email-header {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+
+.email-title {
+    font-size: 25px;
+}
+
+.email-img {
+    height: 35px;
+    width: 35px;
+}
+
+.email-content a {
+    color: white;
+}
+
+.container-social-media {
+    background-color: #333333;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-header {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+
+.social-media-title {
+    font-size: 25px;
+}
+
+.social-media-img {
+    height: 35px;
+    width: 35px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.social-media-text {
+    margin: 8px;
+}
+
+.instagram-image {
+    height: 35px;
+}
+
+.facebook-image {
+    height: 35px;
+}
+
+.x-image {
+    height: 30px;
+}
+
+.address-header {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    align-items: center;
+    border-bottom: 2px solid #333333;
+}
+
+.address-title {
+    font-size: 25px;
+}
+
+.address-img {
+    height: 35px;
+    width: 35px;
+}
+
+.address-map {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.map-img {
+    height: 35px;
+    width: 35px;
 }
 
 .address {
@@ -154,9 +259,11 @@ Contacts page
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .main-contacts {
+        display: flex;
         flex-direction: column;
+        grid-template-columns: 0;
     }
 
     .email {
