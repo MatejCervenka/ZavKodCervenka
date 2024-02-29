@@ -1,4 +1,5 @@
 let shown = false;
+
 window.matchMedia("(max-width: 800px)").addEventListener("change", function (e) {
     shown = false;
     burgerClick();
@@ -17,5 +18,4 @@ function burgerClick() {
         }
         shown = true;
     }
-
 }
