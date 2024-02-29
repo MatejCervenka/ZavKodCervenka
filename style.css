@@ -63,8 +63,8 @@ nav li:hover {
 main {
     color: #333;
     padding: 0.5em;
-    /*display: flex;
-    flex-direction: column;*/
+    display: flex;
+    flex-direction: column;
 }
 
 .top-main {
@@ -74,6 +74,20 @@ main {
     padding: 0 5em 0 5em;
     align-items: center;
     gap: 3em;
+}
+
+.top-main-about {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 5em 0 5em;
+    align-items: center;
+    gap: 3em;
+}
+
+.top-main-about-picture {
+    width: 250px;
+    height: 250px;
 }
 
 .top-main-text {
@@ -279,8 +293,13 @@ Contacts page
 .address-map {
     display: flex;
     justify-content: center;
-    gap: 0.5em;
+    gap: 0.1em;
     align-items: center;
+}
+
+.address-map a {
+    text-decoration: none;
+    margin: 0;
 }
 
 .map-img {
@@ -327,6 +346,37 @@ Contacts page
     }
 
     nav ul {
+        flex-direction: column;
+    }
+
+    .top-main {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 2em 0 2em;
+    }
+
+    .bottom-main {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.7em;
+        margin-top: 0;
+        padding: 0 2em 0 2em;
+    }
+
+    .top-main {
+         border-bottom: 2px solid #333333;
+    }
+
+    .top-main-picture {
+        margin-bottom: 4em;
+    }
+
+    .top-main-about {
+        flex-direction: column;
+        padding: 0 2em 0 2em;
+    }
+
+    header {
         flex-direction: column;
     }
 }
