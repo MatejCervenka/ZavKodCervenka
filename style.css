@@ -33,13 +33,18 @@ Home page
 nav ul {
     list-style: none;
     display: flex;
+    padding: 0;
 }
 
-nav a {
+a {
     text-decoration: none;
     color: #fff;
     margin: 0 15px;
     font-size: 1.2em;
+}
+
+nav li:hover {
+    scale: 1.1;
 }
 
 .logo {
@@ -57,16 +62,25 @@ nav a {
 
 .top-main {
     border-radius: 5px;
-    border: 5px solid #333;
+    border: 2px solid #333;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .bottom-main {
     border-radius: 5px;
-    border: 5px solid #333;
+    border: 2px solid #333;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+p {
+    margin: 1em;
+}
+
+.main-contacts p {
+    padding: 1em;
+    margin: 0;
 }
 
 /*
@@ -91,14 +105,12 @@ Footer
 }
 
 
-
-
 /*
 About page
 */
 .title {
     background-color: #8f8f8f;
-    border-bottom: 5px solid #333;
+    border-bottom: 4px solid #333;
     text-align: center;
 }
 
@@ -143,7 +155,7 @@ Contacts page
     width: 35px;
 }
 
-.phone-content a{
+.phone-content a {
     color: white;
 }
 
@@ -253,10 +265,10 @@ Contacts page
 .address {
     background-color: white;
     border-radius: 5px;
-    padding: 1em;
-    border: 5px solid #333;
+    border: 2px solid #333;
     text-align: center;
-    margin-bottom: 10px;
+    padding: 1em;
+    margin: 0.5em 1em 1em;
 }
 
 @media screen and (max-width: 800px) {
@@ -268,5 +280,13 @@ Contacts page
 
     .email {
         margin: 10px 0;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .header-h1 {
+        margin: 0.5em;
     }
 }
