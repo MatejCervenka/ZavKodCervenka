@@ -4,143 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
     <title>IT Tech</title>
 </head>
 <body>
-    <div class="header">
-        <div class="header-logo">
-            <a href="../index.html">
-                <img class="logo" src="../resources/logo.svg" alt="logo">
-            </a>
-        </div>
+<div class="header">
+    <div class="header-logo">
+        <a href="../index.html">
+            <img class="logo" src="../resources/logo.svg" alt="logo">
+        </a>
+    </div>
 
-        <h1 class="header-h1">IT Tech</h1>
-        <nav>
-            <ul>
-                <li><a href="../html/about.html">About Us</a></li>
-                <li><a href="../html/contacts.html">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="title">
-        <h1>Contact</h1>
-    </div>
-    <div class="main">
-        <div class="main-contacts">
-            <div class="phone">
-                <div class="phone-header">
-                    <p class="phone-title">
-                        <strong>
-                            Phone
-                        </strong>
-                    </p>
-                    <img class="phone-img" src="../resources/phone.svg" alt="phone">
-                </div>
-                <div class="phone-content">
-                    <p>
-                        Lukáš Novák: <a href="#">861 473 497</a>
-                    </p>
-                    <p>
-                        Tereza Svobodová: <a href="#">645 791 880</a>
-                    </p>
-                    <p>
-                        Martin Kovář: <a href="#">615 876 371</a>
-                    </p>
-                    <p>
-                        Jana Procházková: <a href="#">758 019 737</a>
-                    </p>
-                </div>
-            </div>
-            <div class="email">
-                <div class="email-header">
-                    <p class="email-title">
-                        <strong>
-                            Email
-                        </strong>
-                    </p>
-                    <img class="email-img" src="../resources/email.svg" alt="email">
-                </div>
-                <div class="email-content">
-                    <p>
-                        Lukáš Novák: <a href="#">novak.lukas@gmail.com</a>
-                    </p>
-                    <p>
-                        Tereza Svobodová: <a href="#">terezasvobod@seznam.cz</a>
-                    </p>
-                    <p>
-                        Martin Kovář: <a href="#">martin.kovar@gmail.com</a>
-                    </p>
-                    <p>
-                        Jana Procházková: <a href="#">prochazkova@email.cz</a>
-                    </p>
-                </div>
-            </div>
-            <div class="container-social-media">
-                <div class="social-media-header">
-                    <p class="social-media-title">
-                        <strong>
-                            Social
-                        </strong>
-                    </p>
-                    <img class="social-media-img" src="../resources/media.svg" alt="social-medias">
-                </div>
-                <p class="social-media-text">
+    <h1 class="header-h1">IT Tech</h1>
+    <nav>
+        <ul>
+            <li onclick="burgerClick()" class="burger">
+                <img class="burger" src="../resources/burger.svg" alt="">
+            </li>
+            <li class="menu">
+                <a href="about.html">About Us</a>
+            </li>
+            <li class="menu">
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="title">
+    <h1>Contact</h1>
+</div>
+<div class="main">
+    <div class="main-contacts">
+        <div class="phone">
+            <div class="phone-header">
+                <p class="phone-title">
                     <strong>
-                        You can find us on:
+                        Phone
                     </strong>
                 </p>
-                <div class="social-media">
-                    Our Facebook @it_tech
-                    <a href="#">
-                        <img class="facebook-image" src="../resources/facebook.svg" alt="Facebook">
-                    </a>
-                </div>
-                <div class="social-media">
-                    Our Instagram @IT_Tech
-                    <a href="#">
-                        <img class="instagram-image" src="../resources/instagram.svg" alt="Instagram">
-                    </a>
-                </div>
-                <div class="social-media">
-                    Our X @it_Tech
-                    <a href="#">
-                        <img class="x-image" src="../resources/x-social-media.svg" alt="X">
-                    </a>
-                </div>
+                <img class="phone-img" src="../resources/phone.svg" alt="phone">
+            </div>
+            <div class="phone-content">
+                <p>
+                    Lukáš Novák: <a href="#">861 473 497</a>
+                </p>
+                <p>
+                    Tereza Svobodová: <a href="#">645 791 880</a>
+                </p>
+                <p>
+                    Martin Kovář: <a href="#">615 876 371</a>
+                </p>
+                <p>
+                    Jana Procházková: <a href="#">758 019 737</a>
+                </p>
             </div>
         </div>
-        <div class="address">
-            <div class="address-header">
-                <p class="address-title">
+        <div class="email">
+            <div class="email-header">
+                <p class="email-title">
                     <strong>
-                        Address
+                        Email
                     </strong>
                 </p>
-                <img class="address-img" src="../resources/corporate_fare.svg" alt=".">
+                <img class="email-img" src="../resources/email.svg" alt="email">
             </div>
-            <p>
+            <div class="email-content">
+                <p>
+                    Lukáš Novák: <a href="#">novak.lukas@gmail.com</a>
+                </p>
+                <p>
+                    Tereza Svobodová: <a href="#">terezasvobod@seznam.cz</a>
+                </p>
+                <p>
+                    Martin Kovář: <a href="#">martin.kovar@gmail.com</a>
+                </p>
+                <p>
+                    Jana Procházková: <a href="#">prochazkova@email.cz</a>
+                </p>
+            </div>
+        </div>
+        <div class="container-social-media">
+            <div class="social-media-header">
+                <p class="social-media-title">
+                    <strong>
+                        Social
+                    </strong>
+                </p>
+                <img class="social-media-img" src="../resources/media.svg" alt="social-medias">
+            </div>
+            <p class="social-media-text">
                 <strong>
-                    If you'd like to meet us personally (with appointment), you will find us on this address:
+                    You can find us on:
                 </strong>
             </p>
-            <div class="address-map">
-                <p>
-                    Na Pankráci 1685/17, 140 00 Praha 4 - Nusle, Česko
-                </p>
-                <a href="https://mapy.cz/zakladni?source=addr&id=11172832&x=14.4268533&y=50.0618424&z=17" target="_blank">
-                    <img class="map-img" src="../resources/map.svg" alt="map">
+            <div class="social-media">
+                Our Facebook @it_tech
+                <a href="#">
+                    <img class="facebook-image" src="../resources/facebook.svg" alt="Facebook">
+                </a>
+            </div>
+            <div class="social-media">
+                Our Instagram @IT_Tech
+                <a href="#">
+                    <img class="instagram-image" src="../resources/instagram.svg" alt="Instagram">
+                </a>
+            </div>
+            <div class="social-media">
+                Our X @it_Tech
+                <a href="#">
+                    <img class="x-image" src="../resources/x-social-media.svg" alt="X">
                 </a>
             </div>
         </div>
     </div>
-
-    <div class="footer">
-        <div class="footer-content">
-            © 2024 IT Tech
-            <div class="footer-links">
-
-            </div>
+    <div class="address">
+        <div class="address-header">
+            <p class="address-title">
+                <strong>
+                    Address
+                </strong>
+            </p>
+            <img class="address-img" src="../resources/corporate_fare.svg" alt=".">
+        </div>
+        <p>
+            <strong>
+                If you'd like to meet us personally (with appointment), you will find us on this address:
+            </strong>
+        </p>
+        <div class="address-map">
+            <p>
+                Na Pankráci 1685/17, 140 00 Praha 4 - Nusle, Česko
+            </p>
+            <a href="https://mapy.cz/zakladni?source=addr&id=11172832&x=14.4268533&y=50.0618424&z=17" target="_blank">
+                <img class="map-img" src="../resources/map.svg" alt="map">
+            </a>
         </div>
     </div>
+</div>
+
+<div class="footer">
+    <div class="footer-content">
+        © 2024 IT Tech
+        <div class="footer-links">
+
+        </div>
+    </div>
+</div>
 </body>
 </html>

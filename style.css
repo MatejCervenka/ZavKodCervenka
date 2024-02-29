@@ -19,6 +19,10 @@ Home page
     align-items: center;
 }
 
+.burger {
+    display: none;
+}
+
 .header-logo {
     display: flex;
     justify-content: space-between;
@@ -33,7 +37,11 @@ Home page
 nav ul {
     list-style: none;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
     padding: 0;
+    margin: 0;
 }
 
 a {
@@ -45,6 +53,7 @@ a {
 
 nav li:hover {
     scale: 1.1;
+    cursor: pointer;
 }
 
 .logo {
@@ -288,5 +297,19 @@ Contacts page
 
     .header-h1 {
         margin: 0.5em;
+    }
+
+    .burger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: column;
     }
 }
