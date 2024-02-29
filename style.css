@@ -10,7 +10,7 @@ body {
 /*
 Home page
 */
-.header {
+header {
     background-color: #333;
     color: #fff;
     padding: 1em;
@@ -23,9 +23,8 @@ Home page
     display: none;
 }
 
-.header-logo {
+.logo {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -61,26 +60,68 @@ nav li:hover {
     padding-top: 0.7em;
 }
 
-.main {
+main {
     color: #333;
     padding: 0.5em;
     display: flex;
     flex-direction: column;
-    flex: 1;
 }
 
 .top-main {
-    border-radius: 5px;
-    border: 2px solid #333;
+    display: flex;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding: 0 5em 0 5em;
+    align-items: center;
+    gap: 3em;
+}
+
+.top-main-about {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 5em 0 5em;
+    align-items: center;
+    gap: 3em;
+}
+
+.top-main-about-picture {
+    width: 250px;
+    height: 250px;
+}
+
+.top-main-text {
+    border-radius: 5px;
+    border: 2px solid #333;
+    justify-content: flex-end;
+}
+
+.top-main-picture {
+    justify-content: flex-start;
+}
+
+.computer-picture {
+    height: 250px;
+    width: 250px;
 }
 
 .bottom-main {
-    border-radius: 5px;
-    border: 2px solid #333;
+    display: flex;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding: 0 5em 0 5em;
+    align-items: center;
+    gap: 3em;
+}
+
+.bottom-main-text {
+    border-radius: 5px;
+    border: 2px solid #333;
+    justify-content: flex-end;
+}
+
+.bottom-main-picture {
+    justify-content: flex-start;
 }
 
 p {
@@ -95,22 +136,12 @@ p {
 /*
 Footer
 */
-.footer {
-    display: flex;
+footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-links a {
-    color: white;
 }
 
 
@@ -262,8 +293,13 @@ Contacts page
 .address-map {
     display: flex;
     justify-content: center;
-    gap: 0.5em;
+    gap: 0.1em;
     align-items: center;
+}
+
+.address-map a {
+    text-decoration: none;
+    margin: 0;
 }
 
 .map-img {
@@ -311,5 +347,32 @@ Contacts page
 
     nav ul {
         flex-direction: column;
+    }
+
+    .top-main {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 2em 0 2em;
+    }
+
+    .bottom-main {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.7em;
+        margin-top: 0;
+        padding: 0 2em 0 2em;
+    }
+
+    .top-main {
+         border-bottom: 2px solid #333333;
+    }
+
+    .top-main-picture {
+        margin-bottom: 4em;
+    }
+
+    .top-main-about {
+        flex-direction: column;
+        padding: 0 2em 0 2em;
     }
 }
