@@ -37,7 +37,11 @@ Home page
 nav ul {
     list-style: none;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
     padding: 0;
+    margin: 0;
 }
 
 a {
@@ -303,5 +307,9 @@ Contacts page
 
     .menu {
         display: none;
+    }
+
+    nav ul {
+        flex-direction: column;
     }
 }
