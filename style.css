@@ -375,4 +375,8 @@ Contacts page
         flex-direction: column;
         padding: 0 2em 0 2em;
     }
+
+    header {
+        flex-direction: column;
+    }
 }
